@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `blas` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, blas">
+
+    <title>blas - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'blas', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>blas</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-0' class='srclink' href='../src/blas/lib.rs.html#1-85' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Traits that map BLAS accelerated types (e.g. <code>f32</code>) to their respective BLAS calls (e.g.
+<code>saxpy</code>)</p>
+
+<p>This library provides no safe wrappers around the foreign BLAS functions.</p>
+
+<p>If you are looking for a BLAS accelerated linear algebra, check out <a href="https://github.com/japaric/linalg.rs">linalg</a>.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='axpy/index.html'
+                               title='blas::axpy'>axpy</a></td>
+                        <td class='docblock short'>
+                             <p>y := alpha * x + y</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='copy/index.html'
+                               title='blas::copy'>copy</a></td>
+                        <td class='docblock short'>
+                             <p>y := x</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='dot/index.html'
+                               title='blas::dot'>dot</a></td>
+                        <td class='docblock short'>
+                             <p>dot := x<sup>T</sup> * y</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='gemm/index.html'
+                               title='blas::gemm'>gemm</a></td>
+                        <td class='docblock short'>
+                             <p>C := alpha * A * B + beta * C</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='gemv/index.html'
+                               title='blas::gemv'>gemv</a></td>
+                        <td class='docblock short'>
+                             <p>y := alpha * A * x + beta * y</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='nrm2/index.html'
+                               title='blas::nrm2'>nrm2</a></td>
+                        <td class='docblock short'>
+                             <p>nrm2 := ||x||_2</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='mod' href='scal/index.html'
+                               title='blas::scal'>scal</a></td>
+                        <td class='docblock short'>
+                             <p>x := alpha * x</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='enum' href='enum.Transpose.html'
+                               title='blas::Transpose'>Transpose</a></td>
+                        <td class='docblock short'>
+                             <p>Transpose matrix before operation?</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Axpy.html'
+                               title='blas::Axpy'>Axpy</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>axpy</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Copy.html'
+                               title='blas::Copy'>Copy</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>copy</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Dot.html'
+                               title='blas::Dot'>Dot</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>dot</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Gemm.html'
+                               title='blas::Gemm'>Gemm</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>gemm</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Gemv.html'
+                               title='blas::Gemv'>Gemv</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>gemv</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Nrm2.html'
+                               title='blas::Nrm2'>Nrm2</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>nrm2</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='trait' href='trait.Scal.html'
+                               title='blas::Scal'>Scal</a></td>
+                        <td class='docblock short'>
+                             <p>Types with <code>scal</code> acceleration</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='type' href='type.blasint.html'
+                               title='blas::blasint'>blasint</a></td>
+                        <td class='docblock short'>
+                             <p>The integer used by the BLAS library</p>
+
+                        </td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+            <p>
+                Search functions by type signature (e.g.
+                <code>vec -> usize</code>)
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "blas";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

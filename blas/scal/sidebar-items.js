@@ -1,0 +1,1 @@
+initSidebarItems({"type":[["Fn","The signature of `scal`"]]});

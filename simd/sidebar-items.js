@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["sum","Sum the elements of a slice using SIMD ops"]],"mod":[["traits","Traits"]],"struct":[["f32x4",""],["f64x2",""]]});
