@@ -18,7 +18,7 @@ git = "https://github.com/japaric/cast.rs"
 git = "https://github.com/japaric/float.rs"
 
 [dependencies.simd]
-git = "https://github.com/japaric/simd.rs"
+git = "https://github.com/laumann/simd.rs"
 
 [dev-dependencies.approx]
 git = "https://github.com/japaric/approx.rs"
