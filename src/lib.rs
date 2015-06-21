@@ -4,14 +4,14 @@
 #![cfg_attr(test, feature(test))]
 #![cfg_attr(test, plugin(quickcheck_macros))]
 #![deny(missing_docs)]
-#![deny(warnings)]
-#![feature(collections)]
 #![feature(core)]
 #![feature(custom_attribute)]
 #![feature(plugin)]
 #![feature(scoped)]
 #![feature(unboxed_closures)]
 #![feature(unique)]
+#![feature(float_consts)]
+#![feature(vec_push_all)]
 
 extern crate blas;
 extern crate cast;
